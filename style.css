@@ -1,9 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
 
 :root {
     --color-scheme1: #0081A7;
     --color-scheme2: #00AFB9;
-
+    --color-scheme1-dark: #00475B;
+    --color-scheme2-dark: #005B61;
 }
 
 * {
@@ -17,6 +19,7 @@ body {
 }
 
 /* header */
+    /* nav */
 
 header {
     height: 80px;
@@ -25,7 +28,7 @@ header {
 nav {
     display: flex;
     justify-content: space-between;
-    margin: 0 40px;
+    margin: 0 80px;
 }
 
 .logo {
@@ -33,7 +36,7 @@ nav {
     height: 80px;
 }
 
-ul {
+.nav-ul {
     list-style: none;
     display: flex;
     width: 500px;
@@ -41,7 +44,7 @@ ul {
     align-items: center;
 }
 
-li > a {
+.nav-ul-a {
     color: #fff;
     font-size: 18px;
     font-weight: 500;
@@ -49,17 +52,80 @@ li > a {
     position: relative;
 }
 
-li > a::after {
+.nav-ul-a::after {
     content: '';
     position: absolute;
     left: 0;
     top: 100%;
     width: 0;
     height: 3px;
-    background: linear-gradient(to right, var(--color-scheme1), var(--color-scheme2));
+    background: linear-gradient(to right, var(--color-scheme1-dark), var(--color-scheme2));
     transition: width 0.5s ease; 
 }
 
-li > a:hover::after {
+.nav-ul-a:hover::after {
     width: 100%; 
+}
+
+    /* introduction */
+
+.introduction {
+    padding: 100px 0;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.intro-margin {
+    margin-bottom: 20px;;
+}
+
+.intro {
+    width: 650px;
+}
+
+.intro-title, .intro-p {
+    color: white;  
+}
+
+.gradient {
+    background-image: linear-gradient(to right, var(--color-scheme1-dark), var(--color-scheme2));
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: #101010;
+}
+
+.intro-title {
+    font-size: 60px;
+    line-height: 50px;
+}
+
+.intro-title::first-line {
+    font-size: 40px;
+}
+
+.intro-p {
+    font-size: 18px;
+    width: 500px;
+}
+
+.cv-download {
+    font-family: "Open Sans", Arial, Helvetica, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+    height: 50px;
+    background-color: var(--color-scheme1-dark);
+    text-decoration: none;
+    font-size: 16px;
+    text-transform: uppercase;
+    color: white;
+    font-weight: bold;
+    transition: background-color 1s ease, color 0.8s ease;
+}
+
+.cv-download:hover {
+    background-color: var(--color-scheme2);
+    color: black;
 }
