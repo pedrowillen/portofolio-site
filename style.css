@@ -15,14 +15,15 @@
 
 body {
     font-family: "Raleway", Arial, Helvetica, sans-serif;
-    background-color: #101010;
+    background-color: #404040;
 }
 
 /* header */
     /* nav */
 
 header {
-    height: 80px;
+    background-color: #101010;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.534);
 }
 
 nav {
@@ -128,4 +129,12 @@ nav {
 .cv-download:hover {
     background-color: var(--color-scheme2);
     color: black;
+}
+
+/* main */
+    /* about section */
+
+.about {
+    height: 800px;
+    width: 100%;
 }
