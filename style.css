@@ -1,4 +1,10 @@
-@import url('https://fonts.googleapis.com/css2?family=Kode+Mono:wght@400..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root {
+    --color-scheme1: #0081A7;
+    --color-scheme2: #00AFB9;
+
+}
 
 * {
     margin: 0;
@@ -6,6 +12,54 @@
 }
 
 body {
+    font-family: "Raleway", Arial, Helvetica, sans-serif;
     background-color: #101010;
 }
 
+/* header */
+
+header {
+    height: 80px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 40px;
+}
+
+.logo {
+    width: 80px;
+    height: 80px;
+}
+
+ul {
+    list-style: none;
+    display: flex;
+    width: 500px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+li > a {
+    color: #fff;
+    font-size: 18px;
+    font-weight: 500;
+    text-decoration: none;
+    position: relative;
+}
+
+li > a::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 100%;
+    width: 0;
+    height: 3px;
+    background: linear-gradient(to right, var(--color-scheme1), var(--color-scheme2));
+    transition: width 0.5s ease; 
+}
+
+li > a:hover::after {
+    width: 100%; 
+}
