@@ -192,3 +192,23 @@ nav {
     font-size: 1.5em;
     font-weight: 500;
 }
+
+.mb {
+    margin-bottom: 10px;
+}
+
+.social-media {
+    display: flex;
+}
+
+.social-media-icons {
+    text-decoration: none;
+    width: 60px;
+    height: 60px;
+    margin: 15px 15px 0 0;
+    border-radius: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    border: 3px solid var(--color-scheme1);
+}
