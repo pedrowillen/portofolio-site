@@ -121,26 +121,6 @@ nav {
     width: 500px;
 }
 
-.cv-download {
-    font-family: "Open Sans", Arial, Helvetica, sans-serif;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 200px;
-    height: 50px;
-    background-color: var(--color-scheme1-dark);
-    text-decoration: none;
-    font-size: 16px;
-    text-transform: uppercase;
-    color: white;
-    font-weight: bold;
-    transition: background-color 1s ease, color 0.8s ease;
-}
-
-.cv-download:hover {
-    background-color: var(--color-scheme2);
-    color: #101010;
-}
 
 /* main */
 /* about section */
@@ -210,5 +190,5 @@ nav {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    border: 3px solid var(--color-scheme1);
+    border: 2px solid var(--color-scheme1);
 }
